@@ -7,3 +7,7 @@
 # Django 4.1 Dep in req.pip, Model1 + Photoes. Mysql. bootstrap5 + slick slider.
 
 пока красоты нет, но смысл уже есть
+##
+        python manage.py runserver
+
+
