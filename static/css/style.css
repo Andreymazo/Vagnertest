@@ -1,0 +1,23 @@
+
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+   .container {
+        width: 100%;
+        height: 100vh;
+        background: #8d4c4c;
+    }
+    
+
+    .slick-slide {}
+
+    .slick-slider {}
+    
+    .slick-list {}
+
+    .slick-track {
+        display: flex;
+    }
