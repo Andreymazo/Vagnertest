@@ -7,4 +7,5 @@ app_name = VagnertestConfig.name
 urlpatterns = [
 
     path('', home, name='home'),
+    
 ]

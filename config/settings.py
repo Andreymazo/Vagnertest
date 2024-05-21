@@ -45,8 +45,20 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'adminsortable2',
+    'easy_thumbnails',
+    'filer',
     'vagnertest'
 ]
+THUMBNAIL_PROCESSORS = (
+    'easy_thumbnails.processors.colorspace',
+    'easy_thumbnails.processors.autocrop',
+    #'easy_thumbnails.processors.scale_and_crop',
+    'filer.thumbnail_processors.scale_and_crop_with_subject_location',
+    'easy_thumbnails.processors.filters',
+)
+FILER_CANONICAL_URL = 'sharing/'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -136,7 +148,7 @@ MEDIA_URL = '/media/'
 STATIC_URL = '/static/'
 # STATICFILES_DIRS = ("/home/andrey_mazo/Projects/Vagnertest/static", )
 STATICFILES_DIRS = [ os.path.join(BASE_DIR, 'static'), ]
-
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 
 # if DEBUG:
 #   MEDIA_URL = '/media/'

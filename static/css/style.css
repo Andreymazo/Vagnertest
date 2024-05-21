@@ -5,12 +5,11 @@
     box-sizing: border-box;
    }
 
-   .container {
+   .wrapper {
         width: 100%;
         height: 100vh;
         background: #8d4c4c;
     }
-    
 
     .slick-slide {}
 
@@ -18,17 +17,38 @@
     
     .slick-list {
         overflow: hidden;
-        min-width: 0;
+        
     }
-
+    .slider {
+        
+        position: relative;
+        padding: 0px 60px;
+        text-align: center;
+       
+    }
     .slick-track {
         display: flex;
-        min-width: 0;
-        align-items: flex-start;
 
+    }  
+    .sliderbig__item{
+        min-width: 0;
+        text-align: center;
+    }  
+    .slider__item{
+        min-width: 0;
+        position: relative;
+       padding: 0px 60px;
+       text-align: center;
+   }
+   .slider__item{
+        
+         position: relative;
+        padding: 0px 60px;
+        text-align: center;
     }
 
     .slider {
+        
         position: relative;
         padding: 0px 60px;
         text-align: center;
@@ -38,24 +58,29 @@
     .slider .slick-arrow {
         position: absolute;
         top: 50%;
-       
         z-index: 10;
         font-size: 0;
         width: 30px;
         height: 50px;
     }
     .slider .slick-arrow.slick-prev {
+        width: 45px;
+        height: 20px;
         left: 0;
-        background: url('/media/arrow_left_right_svg.jpg');
+        background: url('/media/arrow_left_right_svg.png');
         background-repeat: no-repeat;
-         /* 0 0 no-repeat; */
     }
+        
+    
     .slider .slick-arrow.slick-next {
+        width: 45px;
+        height: 20px;
         right: 0;
-        background: url('/media/arrow_left_right_svg.jpg');
+        background: url('/media/arrow_left_right_svg.png');
         background-repeat: no-repeat;
-         /* 0 0 no-repeat; */
+       
     }
+    
     .slider .slick-dots{
         display: flex;
         align-items: center;
@@ -76,8 +101,6 @@
         background-color: transparent;
         border: 1px solid #fff;
     }
-    
-    .slick-slide.slick-current.slick-active.slick-center{
-        opacity: 1.0;
-    }
-    
+    .sliderbig__item{
+        text-align: center;
+    } 

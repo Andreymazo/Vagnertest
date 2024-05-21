@@ -12,5 +12,5 @@
 
 [Screencast from 20.05.2024 18:12:24.webm](https://github.com/Andreymazo/Vagnertest/assets/116811819/ecdd738b-f546-407b-aefd-3b97cfbfe4b8)
 
-
+find . -name "*.pyc" -exec git rm -f "{}" \
 

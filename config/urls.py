@@ -16,11 +16,14 @@ Including another URLconf
 from config import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    re_path(r'^', include('filer.server.urls')),
+    re_path(r'^filer/', include('filer.urls')),
+    
     path('', include('vagnertest.urls'), )
 ]
 if settings.DEBUG:
