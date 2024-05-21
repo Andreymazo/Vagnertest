@@ -14,3 +14,9 @@
 
 find . -name "*.pyc" -exec git rm -f "{}" \
 
+[Screencast from 21.05.2024 19:03:43.webm](https://github.com/Andreymazo/Vagnertest/assets/116811819/c34b0c78-8996-49d7-b2a1-001a74bc26fd)
+
+[Screencast from 22.05.2024 00:04:07.webm](https://github.com/Andreymazo/Vagnertest/assets/116811819/a909ae3f-4888-485e-916c-49a3d5789b5c)
+
+Слайдер работает норм, только с подходящими размерами фоток, если накидываем в папку черерз поле FilerImageField, то там складываются не те размеры, что планировал, пока слайдер на обычном models.FileField
+
